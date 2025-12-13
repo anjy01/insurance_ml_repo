@@ -14,7 +14,13 @@ def load_artifacts():
     
     return model, label_encoders, scaler
 
-st.title('Insurance Charges Prediction Model')
+st.title('💵 Insurance Charges Prediction Model')
+st.write(
+    """
+    This application predicts insurance charges using a trained machine learning model.
+    Input client details to get Insurance Charge.
+    """
+)
 st.divider()
 
 column_1, column_2 = st.columns(2)
