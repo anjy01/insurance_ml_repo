@@ -6,13 +6,14 @@ import joblib
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
+ARTEFACTS_DIR = BASE_DIR / "artefacts"
 # load model artifacts
 @st.cache_resource
 def load_artifacts():
     """ loads the model, encoder and scaler objects. """
-    model = joblib.load(BASE_DIR/ 'tips_model.pkl')
-    label_encoders = joblib.load(BASE_DIR/ 'label_encoders.pkl')
-    scaler = joblib.load(BASE_DIR/ 'scaler.pkl')
+    model = joblib.load(ARTEFACTS_DIR/ 'tips_model.pkl')
+    label_encoders = joblib.load(ARTEFACTS_DIR/ 'label_encoders.pkl')
+    scaler = joblib.load(ARTEFACTS_DIR/ 'scaler.pkl')
     
     return model, label_encoders, scaler
 
