@@ -8,7 +8,6 @@ Project Overview
 The goal of this project is to:
 - Build a regression model to predict insurance costs
 - Save trained artifacts (model, scaler, encoders)
-- Serve predictions via a lightweight API
-- Showcase production-ready ML structure
+- Showcase production ready ML structure
 
 
